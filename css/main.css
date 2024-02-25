@@ -3,8 +3,8 @@
   font-size: 62.5%;
 
   /* Primary colors */
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
+  --red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
 
@@ -26,6 +26,98 @@ body {
 
   font-size: 1.8rem;
 }
+
+/* Subjects and subject Component */
+.subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.subjects__title {
+  /* TODO: establecer tamaño de fuente para viewports mas grnades */
+  margin-bottom: 2.4rem;
+  padding: 0px;
+
+  color: var(--dark-navy);
+
+  font-weight: 700;
+  /* TODO: establecer tamaño de fuente para viewports mas grandes */
+}
+
+.subject {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  justify-content: start;
+  gap: 1.2rem;
+  padding: 1.8rem 1.6rem;
+  border-radius: 1.2rem;
+
+  /* TODO: cambiar tamaño de fuente para viewport mas grandes */
+  font-size: 1.6rem;
+}
+
+/* TODO: agregar modificadores de subject para colores de fondo */
+.subject--red {
+  background-color: color-mix(in srgb, var(--white) 95%, var(--red));
+}
+
+.subject--yellow {
+  background-color: color-mix(in srgb, var(--white) 95%, var(--orange-yellow));
+}
+
+.subject--green {
+  background-color: color-mix(in srgb, var(--white) 95%, var(--green-teal));
+}
+
+.subject--blue {
+  background-color: color-mix(in srgb, var(--white) 95%, var(--cobalt-blue));
+}
+
+.subject__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.subject__title {
+  font-weight: 500;
+}
+
+.subject__title--red {
+  color: var(--red);
+}
+
+.subject__title--yellow {
+  color: var(--orange-yellow);
+}
+
+.subject__title--green {
+  color: var(--green-teal);
+}
+
+.subject__title--blue {
+  color: var(--cobalt-blue);
+}
+
+/* TODO: agregar modificadores de los títulos de sección para cada color */
+.subject__result {
+  justify-self: flex-end;
+}
+
+.subject__score {
+  color: var(--dark-navy);
+
+  font-weight: 700;
+}
+
+.subject__score--secondary {
+  opacity: 0.5;
+}
+
+/* Button Component */
 
 .btn {
   display: inline-block;
