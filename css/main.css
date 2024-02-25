@@ -29,8 +29,19 @@ body {
   font-size: 1.8rem;
 }
 
+/* Main Component */
+.results {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
 /* Subjects and subject Component */
 .subjects {
+  grid-column: 1/2;
+  grid-row: 1/3;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
