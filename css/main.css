@@ -24,6 +24,8 @@
 body {
   margin: 0px;
 
+  background-color: var(--pale-blue);
+
   font-size: 1.8rem;
 }
 
@@ -31,15 +33,19 @@ body {
 .subjects {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 1.6rem;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 3.2rem;
   border: none;
+
+  background-color: var(--white);
 }
 
 .subjects__title {
   /* TODO: establecer tamaño de fuente para viewports mas grnades */
-  margin-bottom: 2.4rem;
+  margin: 0;
+  margin-bottom: 1.2rem;
   padding: 0px;
 
   color: var(--dark-navy);
@@ -123,6 +129,7 @@ body {
   display: inline-block;
 
   width: 100%;
+  margin-top: 0.8rem;
   padding: 1.6rem 0;
   border-radius: 12.8rem;
 
