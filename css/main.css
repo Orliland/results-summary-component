@@ -12,7 +12,7 @@
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
-  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-navy: hsl(224, 30%, 27%);
 
   /* Gradients colors */
   --light-slate-blue: hsl(252, 100%, 67%);
@@ -22,5 +22,30 @@
 }
 
 body {
+  margin: 0px;
+
   font-size: 1.8rem;
+}
+
+.btn {
+  display: inline-block;
+
+  width: 100%;
+  padding: 1.6rem 0;
+  border-radius: 12.8rem;
+
+  background-color: var(--dark-navy);
+  color: var(--white);
+
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
 }
