@@ -91,6 +91,7 @@ body {
 }
 
 .summary__label {
+  display: inline-block;
   margin-bottom: 0.8rem;
 
   color: var(--white);
