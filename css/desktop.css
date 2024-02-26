@@ -1,3 +1,7 @@
+/* 
+  TODO: agregar boxshadow a caja madre
+*/
+
 body {
   height: 100vh;
 }
@@ -48,7 +52,7 @@ body {
 .subjects {
   grid-column: 2/3;
   grid-row: 1/2;
-  padding: 3.8rem 4rem auto;
+  padding: 3.8rem 4rem 0;
 }
 
 .subjects__title {
