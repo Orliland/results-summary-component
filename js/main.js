@@ -53,7 +53,7 @@ function createElements(data) {
 }
 
 function loadData() {
-  const file = "../data.json";
+  const file = "./../data.json";
   fetch(file)
     .then((response) => {
       return response.json();
