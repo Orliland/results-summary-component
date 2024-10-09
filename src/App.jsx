@@ -5,7 +5,9 @@ const Subject = ({ info, color }) => {
   return (
     <div className={`subject subject--${color}`}>
       <img src={info.icon} alt="" className="subject__icon" />
-      <span className={`subject__title subject__title--${color}`}></span>
+      <span className={`subject__title subject__title--${color}`}>
+        {info.category}
+      </span>
       <div className="subject__result">
         <span className="subject__score">{info.score}</span>
         <span className="subject__score subject__score--secondary"> / 100</span>
