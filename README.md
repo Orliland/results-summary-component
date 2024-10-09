@@ -44,6 +44,8 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- React
+- ViteJS
 
 ### What I learned
 
